@@ -1,0 +1,199 @@
+body{
+
+    padding-top: 75px;
+    background-color: #222222;
+    color: white;
+    height: 89.9vh;
+}
+.contact-page-container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page-title{
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: -40px;
+    display: grid;
+    justify-content: center;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 130px;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.line-box{
+    margin-bottom: 20px;
+}
+.line{
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 35px;
+}
+
+.para-box{
+    width:350px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.mail-box,.call-box{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.img img{
+    height: 50px;
+    width: 50px;
+}
+
+.right .heading{
+    opacity: .5;
+    font-family: 'Poppins';
+}
+
+.right .value{
+    font-weight: 600;
+}
+
+.call-id a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+.call-id img{
+    height: 28px;
+    
+}
+
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+}
+
+button .slimg{
+    height: 30px;
+    width: 30px;
+    margin-bottom: px;
+}
+
+div a{
+    text-decoration: none;
+    color: white;
+}
+
+div a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.right-container .top{
+    display: flex;
+    gap: 2rem;
+}
+
+label{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.i-field{
+    border: 1px solid #de3132;
+    background-color: #22222200;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.i-field:focus{
+    outline: none;
+    border: 1px solid #de3132;
+
+}
+
+.im-field:focus{
+    outline: none;
+    border: 1px solid #de3132;
+
+}
+
+.im-field{
+    color: white;
+    border: 1px solid #de3132;
+    background-color: #22222200;
+    width: 656px;
+    height: 200px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    resize: none;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.bottom{
+    display: flex;
+    justify-content: end;
+}
+
+.send-btn{
+    width: 160px;
+    height: 50px ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-right: 2px;
+}
+
+
+.send-btn img{
+    height: 20px;
+    position: relative;
+    top: 1px;
+}
+
+.smsg{
+    font-family: 'Readex Pro', sans-serif;
+    position: relative;
+    top: -3px;
+}

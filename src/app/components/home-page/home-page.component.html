@@ -1,0 +1,36 @@
+<body>
+    <div class="home-container">
+        <div class="left-container">
+            <p class="intro">
+                HELLO, I AM
+            </p>
+            <p class="name">
+                {{myName}}
+            </p>
+            <p class="skill">
+                {{skills}}
+            </p>
+            <div class="social-links">
+                <div class="social-links" *ngFor="let data of containsSLinkUrls">
+                    <div class="slink-image">
+                        <a href={{data.link}} target="_blank"><button mat-icon-button color="none" matTooltip={{data.name}}><img  class="slimg" src={{data.url}} alt=""></button></a>
+                    </div>
+                </div>
+            </div>
+                <div class="buttons">
+                    <div class="hp-button">
+                       <a href="mailto:madhuspediredla@gmail.com" target="_blank" style="color: white;"> <button mat-button style="background-color:#DE3132; color: white;"  class="hire-me hp-button"><span class="bt-text">Hire Me</span></button></a>
+                    </div>
+                    <div class="resume-d hp-button">
+                       <a href="../../../assets/downloads/madhu_resume.pdf" download target="_blank" style="color: white;"> <button mat-button color="white" style="border: 1px solid ;"  class="resume-d hp-button"><span class="bt-text">Resume <img class="download" src="../../../assets/images/social-links/downloading.png"></span></button></a>
+                    </div>
+                </div>
+        </div>
+        <div class="right-container">
+            <div class="my-image">
+                <img src="../../../assets/images/my-pic/Madhu.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>

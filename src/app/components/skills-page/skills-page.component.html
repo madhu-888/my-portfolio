@@ -1,0 +1,36 @@
+<body>
+    <div class="skills-page-container">
+        <mat-grid-list cols="1" rowHeight="100px">
+            <div class="title-container">
+                <p class="page-title">
+                    {{pageTitle}}
+                </p>
+            </div>
+            <mat-grid-list cols="1" rowHeight="">
+                <div style="margin-top:10%;">
+                    
+                </div>
+                    <div class="left-container">
+                        <div class="skill-set">
+                            <div class="skills" *ngFor="let skill of containsMySkills">
+                                <div class="skill-box"><img src={{skill.skillImage}}>
+                                    <p>{{skill.skillName}}</p></div>
+                                    <div class="skill-dabba">
+                                        <div class="skill" *ngFor="let progLang of skill.progLangs">
+                                        
+                                            <div class="circle-bar"> <circle-progress [percent]="progLang.percent"  [space]="-5" [radius]="30" [outerStrokeWidth]="5"
+                                                [innerStrokeWidth]="5" [outerStrokeColor]="'#DE3132'" [innerStrokeColor]="'#1E1E1E'" [animation]="true"
+                                                [animationDuration]="1000" [title]="progLang.title" [showSubtitle]="false" [titleColor]="'white'" [clockwise]="true"></circle-progress>
+                                            </div>
+                                            <div class="">{{progLang.langName}}</div>
+                                            
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </mat-grid-list>
+        </mat-grid-list>
+    </div>
+</body>

@@ -1,0 +1,31 @@
+<body>
+    <div class="about-container">
+        <div class="left-container">
+            <p class="page-title">
+                {{pageTitle}}
+            </p>
+            <div class="para-container">
+                <p class="para">
+                    {{aboutMe}}
+                </p>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="sec-title">
+                <span class="title">
+                    {{title}}
+                </span>
+            </div>
+            <div class="details-container">
+                <div class="" *ngFor="let data of containsmyDetails">
+                    <div class="detail-block"><span class="key-value"><span class="key">{{data.key}}:</span> {{data.value}}</span></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="resume-d hp-button">
+                   <a href="../../../assets/downloads/madhu_resume.pdf" download target="_blank" style="color: white;"> <button mat-button color="white" style="background-color:#DE3132;"  class="resume-d hp-button"><span class="bt-text">Download CV <img class="download" src="../../../assets/images/social-links/downloading.png"></span></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

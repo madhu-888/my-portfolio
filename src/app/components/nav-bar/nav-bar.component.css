@@ -1,0 +1,44 @@
+body{
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+}
+
+span{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -5px;
+}
+
+mat-icon{
+    color: #DE3132;
+}
+mat-toolbar{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.link a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-right: 1rem;
+    font-size: 20px;
+    opacity: .5;
+    transition: all .218s;
+}
+
+.link a.active{
+    opacity: 1;
+    color: #DE3132;
+}

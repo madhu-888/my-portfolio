@@ -1,0 +1,93 @@
+<body>
+    <div class="contact-page-container">
+        <div class="header">
+            <div class="page-title">
+                <span class="title">{{pageTitle}}</span>
+            </div>
+        </div>
+        <div class="body">
+            <div class="left-container">
+                <div class="line-box">
+                    <span class="line">{{pickLine}}</span>
+                </div>
+                <div class="para-box">
+                    <p>{{para}}</p>
+                </div>
+                <div class="contact-box">
+                    <div class="mail-box">
+                        <div class="mail-img img">
+                            <a href="mailto:madhuspediredla@gmail.com">
+                                <img src="../../../assets/images/social-links/envelope.png" alt="">
+                            </a>
+                        </div>
+                        <div class="right">
+                            <div class="mail-me heading">
+                                <a href="mailto:madhuspediredla@gmail.com" target="_blank">
+                                    <span class="contact-title">MAIL ME</span>
+                                </a>
+                            </div>
+                            <div class="mail-id value">
+                                <a href="mailto:madhuspediredla@gmail.com">
+                                    <span class="main-value">{{email}}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-box">
+                        <div class="call-img img">
+                            <a href="tel:7382036544">
+                                <img src="../../../assets/images/social-links/call.png" alt="">
+                            </a>
+                        </div>
+                        <div class="right">
+                            <div class="call-me heading">
+                                <a href="tel:7382036544">
+                                    <span class="contact-title">CALL ME</span>
+                                </a>
+                            </div>
+                            <div class="call-id value">
+                                <a href="tel:7382036544">
+                                    <img src="../../../assets/images/social-links/india-flag.png">
+                                    <div class="main-value">{{mobile}}</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <div class="social-links" *ngFor="let data of containsSLinkUrls">
+                        <div class="slink-image">
+                            <a href={{data.link}} target="_blank"><button mat-icon-button color="none" matTooltip={{data.name}}><img  class="slimg" src={{data.url}} alt=""></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="POST" data-netlify="true">
+            <div class="right-container">
+                <div class="top">
+                        <div class="sender-name-box">
+                            <label for="name-field">NAME:</label><br>
+                            <input type="text" name="name" class="i-field" id="name-field" placeholder="Your name">
+                        </div>
+                        <div class="sender-mail-box">
+                            <label for="email-field">E-MAIL:</label><br>
+                            <input type="email" name="email" class="i-field" id="email-field" placeholder="Your e-mail">
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="sender-message-box">
+                            <label for="message-field">MESSAGE:</label><br>
+                            <textarea name="message" class="im-field" id="message-field" cols="30" rows="8" placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div data-netlify-recaptcha="false"></div>
+                        <div class="send-btn-box">
+                            <button class="send-btn" mat-button style="color: white; background-color: #de3132;"><span class="smsg" style="display: inline;">Send Message</span><img src="../../../assets/images/social-links/send.png"></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
