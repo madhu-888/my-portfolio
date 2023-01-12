@@ -8,6 +8,7 @@ body{
 .contact-page-container{
     display: flex;
     flex-direction: column;
+    height: 89vh;
 }
 .header{
     display: flex;
@@ -105,7 +106,6 @@ body{
 button .slimg{
     height: 30px;
     width: 30px;
-    margin-bottom: px;
 }
 
 div a{
@@ -196,4 +196,31 @@ label{
     font-family: 'Readex Pro', sans-serif;
     position: relative;
     top: -3px;
+}
+
+@media (max-width:800px){
+    body{
+        height: 135%;
+    }
+    .contact-page-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+    
+    }
+
+    .left-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: left;
+        margin-bottom: 10%;
+    }
 }

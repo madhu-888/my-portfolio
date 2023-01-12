@@ -1,9 +1,9 @@
 body{
-    padding-top: 75px;
+    padding-top: 0px;
     background-color: #1F1F1F;
     background-color: #222222;
     color: white;
-    height: 89.9vh;
+    height: 80vh;
 }
 .hp-button{
     width: 150px;
@@ -28,7 +28,7 @@ div a:visited{
 }
 
 .about-container{
-    margin-top: 140px;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -77,4 +77,24 @@ div a:visited{
 }
 .bt-text{
     font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width:800px){
+
+    body{
+        display: flex;
+    }
+    .about-container{
+        margin-top: 20%;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        row-gap: 50px;
+    }
+
+     mat-grid-list{
+        display: flex;
+        flex-direction: column;
+    }
 }

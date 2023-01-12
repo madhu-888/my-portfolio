@@ -3,6 +3,7 @@ body{
     background-color: #222222;
     color: white;
     height: 89.9vh;
+    width: 100% auto;
 }
 
 .home-container{
@@ -90,4 +91,25 @@ div a:visited{
     border-radius: 50px;
     position: relative;
     top: -20px;
+}
+
+@media (max-width:800px){
+    .body{
+        
+        width: 100vw;
+        height: 100% auto;
+    }
+
+    .home-container{
+        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .my-image img{
+        margin-left:275px ;
+        align-items: center;
+        height: 290px;
+    }
 }

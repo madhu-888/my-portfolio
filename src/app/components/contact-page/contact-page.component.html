@@ -62,17 +62,17 @@
                     </div>
                 </div>
             </div>
-            <form action="POST" data-netlify="true">
-            <div class="right-container">
-                <div class="top">
-                        <div class="sender-name-box">
-                            <label for="name-field">NAME:</label><br>
-                            <input type="text" name="name" class="i-field" id="name-field" placeholder="Your name">
-                        </div>
-                        <div class="sender-mail-box">
-                            <label for="email-field">E-MAIL:</label><br>
-                            <input type="email" name="email" class="i-field" id="email-field" placeholder="Your e-mail">
-                        </div>
+            <form name="contact" action="POST" netlify >
+                <div class="right-container">
+                    <div class="top">
+                            <div class="sender-name-box">
+                                <label for="name-field">NAME:</label><br>
+                                <input type="text" name="name" class="i-field" id="name-field" placeholder="Your name">
+                            </div>
+                            <div class="sender-mail-box">
+                                <label for="email-field">E-MAIL:</label><br>
+                                <input type="email" name="email" class="i-field" id="email-field" placeholder="Your e-mail">
+                            </div>
                     </div>
                     <div class="middle">
                         <div class="sender-message-box">
@@ -81,13 +81,13 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <div data-netlify-recaptcha="false"></div>
                         <div class="send-btn-box">
-                            <button class="send-btn" mat-button style="color: white; background-color: #de3132;"><span class="smsg" style="display: inline;">Send Message</span><img src="../../../assets/images/social-links/send.png"></button>
+                            <button type="submit" class="send-btn" mat-button style="color: white; background-color: #de3132;"><span class="smsg" >Send Message</span><img src="../../../assets/images/social-links/send.png"></button>
                         </div>
                     </div>
                 </div>
             </form>
+            
         </div>
     </div>
 </body>

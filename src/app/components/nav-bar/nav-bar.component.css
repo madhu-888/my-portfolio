@@ -1,11 +1,11 @@
 body{
-    width: 100vw;
+    width: 100%;
     height: auto;
     position: fixed;
     z-index: 999;
 }
 
-span{
+mat-toolbar div div{
     color: white;
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -13,13 +13,32 @@ span{
 }
 
 mat-icon{
-    color: #DE3132;
+    font-size: 30px;
+    
 }
 mat-toolbar{
     background-color: #222222;
     display: flex;
     justify-content: space-between;
-    vertical-align: top;
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
+}
+
+.side-name{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+#check{
+    display: none;
 }
 
 .nav-links{
@@ -41,4 +60,17 @@ mat-toolbar{
 .link a.active{
     opacity: 1;
     color: #DE3132;
+}
+
+@media (max-width: 952px){
+    .side-name{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
 }
